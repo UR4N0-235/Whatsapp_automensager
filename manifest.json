@@ -1,0 +1,19 @@
+{
+    "name": "WhatsApp Web AutoMensager",
+    "manifest_version": 3,
+    "version": "0.0.1",
+    "description": "WhatsApp Web auto mensager",
+    "permissions": [
+        "storage", "clipboardRead"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["https://web.whatsapp.com/"],
+            "js": ["autosender.js"]
+        }
+    ],
+    "action": {
+        "default_title": "Click Me",
+        "default_popup": "menu/index.html"  
+    }
+}
